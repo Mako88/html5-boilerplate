@@ -8,4 +8,6 @@
 
 <p>Hello world! This is That Guy Boilerplate.</p>
 
+<?php include("include/sidebar.php"); ?>
+
 <?php include("include/footer.php"); ?>
