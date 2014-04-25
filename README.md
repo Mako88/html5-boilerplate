@@ -1,54 +1,25 @@
-# [HTML5 Boilerplate](http://html5boilerplate.com)
+# That Guy Boilerplate
 
-HTML5 Boilerplate is a professional front-end template for building fast,
-robust, and adaptable web apps or sites.
+That Guy Boilerplate is a modified version of HTML5 Boilerplate. That Guy
+assumes you will have a header and footer that are standard throughout the
+site. To this end, it uses PHP includes to minimize the editing needed.
+There are also several other improvements added to the default HTML5
+Boilerplate including an @font-face template for custom fonts, some slight
+re-arrangement of directory structure, and other small additions and changes.
 
-This project is the product of many years of iterative development and combined
-community knowledge. It does not impose a specific development philosophy or
-framework, so you're free to architect your code in the way that you want.
-
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Homepage: [http://html5boilerplate.com](http://html5boilerplate.com)
-* Twitter: [@h5bp](http://twitter.com/h5bp)
+* HTML5 Boilerplate: [http://html5boilerplate.com](http://html5boilerplate.com)
 
 
 ## Quick start
 
 Choose one of the following options:
 
-1. Download the latest stable release from
-   [html5boilerplate.com](http://html5boilerplate.com/) or a custom build from
-   [Initializr](http://www.initializr.com).
+1. Download the master as a zip file [here](https://github.com/Mako88/thatguy-boilerplate/archive/master.zip).
 2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the [tagged
-   release](https://github.com/h5bp/html5-boilerplate/releases) you'd like to
+   https://github.com/Mako88/thatguy-boilerplate.git` - and checkout the [tagged
+   release](https://github.com/Mako88/thatguy-boilerplate/releases) you'd like to
    use.
 
-
-## Features
-
-* HTML5 ready. Use the new elements with confidence.
-* Cross-browser compatible (Chrome, Firefox, IE8+, Opera, Safari).
-* Designed with progressive enhancement in mind.
-* Includes [Normalize.css](http://necolas.github.com/normalize.css/) for CSS
-  normalizations and common bug fixes.
-* The latest [jQuery](http://jquery.com/) via CDN, with a local fallback.
-* The latest [Modernizr](http://modernizr.com/) build for feature detection.
-* Placeholder CSS Media Queries.
-* Useful CSS helpers.
-* Default print CSS, performance optimized.
-* Protection against any stray `console.log` causing JavaScript errors in
-  older browsers.
-* An optimized Google Analytics snippet.
-* Apache server caching, compression, and other configuration defaults for
-  Grade-A performance.
-* Cross-domain Ajax and Flash.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
-
-[HTML5 Boilerplate v4 provides legacy browser
-support](https://github.com/h5bp/html5-boilerplate/tree/v4) (IE 6+, Firefox
-3.6+, Safari 4+), but is no longer actively developed.
 
 ## Documentation
 
@@ -60,5 +31,6 @@ want to write about your project.
 
 ## Contributing
 
-Anyone and everyone is welcome to [contribute](CONTRIBUTING.md). Hundreds of
-developers have helped make the HTML5 Boilerplate what it is today.
+Everyone is welcome to contribute, however please consider contributing to HTML5
+Boilerplate directly unless your additions are directly related to That Guy,
+since all changes upstream will be merged into That Guy as well.
