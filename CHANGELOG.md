@@ -1,5 +1,7 @@
 ### HEAD
 
+* Update to jQuery 1.11.1.
+* Update to Modernizr 2.8.0.
 * Update to Apache Server Configs 2.3.0.
 * Use `<!doctype html>` instead of `<!DOCTYPE html>`
   ([#1522](https://github.com/h5bp/html5-boilerplate/issues/1522)).
@@ -7,7 +9,6 @@
   ([#1050](https://github.com/h5bp/html5-boilerplate/issues/1050)).
 * Add `/browserconfig.xml` file and tile images
   ([#1481](https://github.com/h5bp/html5-boilerplate/issues/1481)).
-* Update to jQuery 1.11.0.
 * Add `Disallow:` to `robots.txt`
   ([#1487](https://github.com/h5bp/html5-boilerplate/issues/1487)).
 * Remove default foreground color from form elements
@@ -17,7 +18,6 @@
 * Remove image replacement helper class `.ir`
   ([#1472](https://github.com/h5bp/html5-boilerplate/issues/1472),
    [#1475](https://github.com/h5bp/html5-boilerplate/issues/1475)).
-* Update to Modernizr 2.7.1.
 * Add vertical centering for `svg`
   ([#1453](https://github.com/h5bp/html5-boilerplate/issues/1453)).
 * Redesign 404 page
