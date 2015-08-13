@@ -1,3 +1,17 @@
+#menubox {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+#menuicon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    display: none;
+    transition: all 0s 0.1s;
+}
+
 nav {
     background: #FFF;
 }
@@ -11,6 +25,7 @@ nav ul {
 nav ul li {
     float: left;
     display: inline;
+    position: relative;
 }
 
 nav ul li:hover {
@@ -39,7 +54,7 @@ nav ul li ul li a {
     color:#444;
 }
 
-nav ul li ul li:hover a {
+nav ul li ul li:hover > a {
     background:#F7F7F7;
 }
 

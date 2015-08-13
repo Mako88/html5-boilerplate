@@ -678,60 +678,75 @@ body {
 }
 */
 /* line 1, C:/wamp/www/css/_menu.scss */
+#menubox {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+/* line 7, C:/wamp/www/css/_menu.scss */
+#menuicon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: none;
+  transition: all 0s 0.1s; }
+
+/* line 15, C:/wamp/www/css/_menu.scss */
 nav {
   background: #FFF; }
 
-/* line 5, C:/wamp/www/css/_menu.scss */
+/* line 19, C:/wamp/www/css/_menu.scss */
 nav ul {
   text-align: center;
   list-style: none;
   padding: 0; }
 
-/* line 11, C:/wamp/www/css/_menu.scss */
+/* line 25, C:/wamp/www/css/_menu.scss */
 nav ul li {
   float: left;
-  display: inline; }
+  display: inline;
+  position: relative; }
 
-/* line 16, C:/wamp/www/css/_menu.scss */
+/* line 31, C:/wamp/www/css/_menu.scss */
 nav ul li:hover {
-  background: #F7F7F7; }
+  background: #E6E6E6; }
 
-/* line 20, C:/wamp/www/css/_menu.scss */
+/* line 35, C:/wamp/www/css/_menu.scss */
 nav ul li a {
   display: block;
   padding: 15px 25px;
   color: #444; }
 
-/* line 26, C:/wamp/www/css/_menu.scss */
+/* line 41, C:/wamp/www/css/_menu.scss */
 nav ul li ul {
   position: absolute;
   width: 110px;
   background: #FFF; }
 
-/* line 32, C:/wamp/www/css/_menu.scss */
+/* line 47, C:/wamp/www/css/_menu.scss */
 nav ul li ul li {
   width: 110px; }
 
-/* line 36, C:/wamp/www/css/_menu.scss */
+/* line 51, C:/wamp/www/css/_menu.scss */
 nav ul li ul li a {
   display: block;
   padding: 15px 10px;
   color: #444; }
 
-/* line 42, C:/wamp/www/css/_menu.scss */
+/* line 57, C:/wamp/www/css/_menu.scss */
 nav ul li ul li:hover > a {
   background: #F7F7F7; }
 
-/* line 46, C:/wamp/www/css/_menu.scss */
+/* line 61, C:/wamp/www/css/_menu.scss */
 nav ul li ul li ul {
   left: 110px;
   top: 0; }
 
-/* line 51, C:/wamp/www/css/_menu.scss */
+/* line 66, C:/wamp/www/css/_menu.scss */
 .no-js nav ul {
   display: none; }
 
-/* line 55, C:/wamp/www/css/_menu.scss */
+/* line 70, C:/wamp/www/css/_menu.scss */
 .no-js nav li:hover ul {
   display: block; }
 
@@ -745,5 +760,51 @@ html {
     -webkit-background-size: cover;
 } */
 /* Change max-width to different steps based on content ----------- */
+@media only screen and (max-width: 959px) {
+  /* line 4, C:/wamp/www/css/_responsive.scss */
+  nav ul {
+    display: none; }
+  /* line 8, C:/wamp/www/css/_responsive.scss */
+  #menubox:checked ~ nav ul {
+    display: block;
+    text-align: left; }
+  /* line 13, C:/wamp/www/css/_responsive.scss */
+  #menubox:checked ~ nav ul li {
+    display: block;
+    float: none;
+    width: 110px; }
+  /* line 19, C:/wamp/www/css/_responsive.scss */
+  #menubox:checked ~ nav ul li ul {
+    display: block;
+    left: 110px;
+    top: 0; }
+  /*#menubox:checked ~ nav ul li {
+        display: block;
+        text-align: left;
+        width: 100px;
+        float: none;
+        margin-left: 15px;
+        overflow: hidden;
+    }
+    
+    #menubox:checked ~ nav ul ul {
+        display: block;
+        background-color: transparent;
+        margin-top: 0;
+        position: relative;
+        z-index: 99;
+        margin-bottom: 10px;
+    }
+    
+    #menubox:checked ~ nav ul ul li {
+        width: 100px;
+        text-align: left;
+    }*/
+  /* line 48, C:/wamp/www/css/_responsive.scss */
+  #menuicon {
+    display: block;
+    z-index: 25;
+    margin-top: 10px;
+    margin-left: 10px; } }
 
 /*# sourceMappingURL=styles.css.map */
