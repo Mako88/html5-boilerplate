@@ -1,0 +1,16 @@
+@import 'normalize';
+@import 'defaults';
+@import 'fonts';
+@import 'menu';
+
+/* Template for a full-size background image
+
+html {
+    background: url("../img/test.jpg") no-repeat fixed center center;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+} */
+
+@import 'responsive';
