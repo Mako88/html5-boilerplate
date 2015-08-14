@@ -4,7 +4,6 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
-/* line 9, C:/wamp/www/css/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -16,7 +15,6 @@ html {
 /**
  * Remove default margin.
  */
-/* line 19, C:/wamp/www/css/_normalize.scss */
 body {
   margin: 0; }
 
@@ -28,7 +26,6 @@ body {
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-/* line 45, C:/wamp/www/css/_normalize.scss */
 article,
 aside,
 details,
@@ -48,7 +45,6 @@ summary {
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-/* line 57, C:/wamp/www/css/_normalize.scss */
 audio,
 canvas,
 progress,
@@ -62,7 +58,6 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 67, C:/wamp/www/css/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -71,7 +66,6 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
  */
-/* line 78, C:/wamp/www/css/_normalize.scss */
 [hidden],
 template {
   display: none; }
@@ -81,7 +75,6 @@ template {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 89, C:/wamp/www/css/_normalize.scss */
 a {
   background-color: transparent; }
 
@@ -89,7 +82,6 @@ a {
  * Improve readability of focused elements when they are also in an
  * active/hover state.
  */
-/* line 99, C:/wamp/www/css/_normalize.scss */
 a:active,
 a:hover {
   outline: 0; }
@@ -99,14 +91,12 @@ a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
-/* line 110, C:/wamp/www/css/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-/* line 119, C:/wamp/www/css/_normalize.scss */
 b,
 strong {
   font-weight: bold; }
@@ -114,7 +104,6 @@ strong {
 /**
  * Address styling not present in Safari and Chrome.
  */
-/* line 127, C:/wamp/www/css/_normalize.scss */
 dfn {
   font-style: italic; }
 
@@ -122,7 +111,6 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-/* line 136, C:/wamp/www/css/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -130,7 +118,6 @@ h1 {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 145, C:/wamp/www/css/_normalize.scss */
 mark {
   background: #ff0;
   color: #000; }
@@ -138,14 +125,12 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 154, C:/wamp/www/css/_normalize.scss */
 small {
   font-size: 80%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 163, C:/wamp/www/css/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -153,11 +138,9 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-/* line 170, C:/wamp/www/css/_normalize.scss */
 sup {
   top: -0.5em; }
 
-/* line 174, C:/wamp/www/css/_normalize.scss */
 sub {
   bottom: -0.25em; }
 
@@ -166,14 +149,12 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-/* line 185, C:/wamp/www/css/_normalize.scss */
 img {
   border: 0; }
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
-/* line 193, C:/wamp/www/css/_normalize.scss */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -182,14 +163,12 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
-/* line 204, C:/wamp/www/css/_normalize.scss */
 figure {
   margin: 1em 40px; }
 
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 212, C:/wamp/www/css/_normalize.scss */
 hr {
   box-sizing: content-box;
   height: 0; }
@@ -197,14 +176,12 @@ hr {
 /**
  * Contain overflow in all browsers.
  */
-/* line 221, C:/wamp/www/css/_normalize.scss */
 pre {
   overflow: auto; }
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-/* line 232, C:/wamp/www/css/_normalize.scss */
 code,
 kbd,
 pre,
@@ -224,7 +201,6 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-/* line 256, C:/wamp/www/css/_normalize.scss */
 button,
 input,
 optgroup,
@@ -240,7 +216,6 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-/* line 266, C:/wamp/www/css/_normalize.scss */
 button {
   overflow: visible; }
 
@@ -250,7 +225,6 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-/* line 278, C:/wamp/www/css/_normalize.scss */
 button,
 select {
   text-transform: none; }
@@ -262,9 +236,9 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 293, C:/wamp/www/css/_normalize.scss */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -274,7 +248,6 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 303, C:/wamp/www/css/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default; }
@@ -282,7 +255,6 @@ html input[disabled] {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 312, C:/wamp/www/css/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -292,7 +264,6 @@ input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 322, C:/wamp/www/css/_normalize.scss */
 input {
   line-height: normal; }
 
@@ -303,7 +274,6 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 335, C:/wamp/www/css/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -316,7 +286,6 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-/* line 347, C:/wamp/www/css/_normalize.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto; }
@@ -325,7 +294,6 @@ input[type="number"]::-webkit-outer-spin-button {
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
-/* line 356, C:/wamp/www/css/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -337,7 +305,6 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-/* line 368, C:/wamp/www/css/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -345,7 +312,6 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 376, C:/wamp/www/css/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -355,7 +321,6 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 387, C:/wamp/www/css/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -365,7 +330,6 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
-/* line 396, C:/wamp/www/css/_normalize.scss */
 textarea {
   overflow: auto; }
 
@@ -373,7 +337,6 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-/* line 405, C:/wamp/www/css/_normalize.scss */
 optgroup {
   font-weight: bold; }
 
@@ -382,12 +345,10 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
-/* line 416, C:/wamp/www/css/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 422, C:/wamp/www/css/_normalize.scss */
 td,
 th {
   padding: 0; }
@@ -401,7 +362,6 @@ th {
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* line 13, C:/wamp/www/css/_defaults.scss */
 html {
   color: #222;
   font-size: 1em;
@@ -409,7 +369,6 @@ html {
   height: 100%;
   overflow: auto; }
 
-/* line 21, C:/wamp/www/css/_defaults.scss */
 body {
   min-height: 100%;
   overflow: auto; }
@@ -421,12 +380,10 @@ body {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-/* line 34, C:/wamp/www/css/_defaults.scss */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 39, C:/wamp/www/css/_defaults.scss */
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
@@ -434,7 +391,6 @@ body {
 /*
  * A better looking default horizontal rule
  */
-/* line 48, C:/wamp/www/css/_defaults.scss */
 hr {
   display: block;
   height: 1px;
@@ -448,7 +404,6 @@ hr {
  * images, videos and the bottom of their containers:
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
-/* line 68, C:/wamp/www/css/_defaults.scss */
 audio,
 canvas,
 iframe,
@@ -460,7 +415,6 @@ video {
 /*
  * Remove default fieldset styles.
  */
-/* line 76, C:/wamp/www/css/_defaults.scss */
 fieldset {
   border: 0;
   margin: 0;
@@ -469,14 +423,12 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
  */
-/* line 86, C:/wamp/www/css/_defaults.scss */
 textarea {
   resize: vertical; }
 
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
-/* line 94, C:/wamp/www/css/_defaults.scss */
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -489,7 +441,6 @@ textarea {
 /*
  * Hide visually and from screen readers:
  */
-/* line 109, C:/wamp/www/css/_defaults.scss */
 .hidden {
   display: none !important; }
 
@@ -497,7 +448,6 @@ textarea {
  * Hide only visually, but have it available for screen readers:
  * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-/* line 118, C:/wamp/www/css/_defaults.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -513,7 +463,6 @@ textarea {
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
-/* line 136, C:/wamp/www/css/_defaults.scss */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -526,7 +475,6 @@ textarea {
 /*
  * Hide visually and from screen readers, but maintain layout
  */
-/* line 149, C:/wamp/www/css/_defaults.scss */
 .invisible {
   visibility: hidden; }
 
@@ -541,7 +489,6 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-/* line 166, C:/wamp/www/css/_defaults.scss */
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -549,7 +496,6 @@ textarea {
   display: table;
   /* 2 */ }
 
-/* line 171, C:/wamp/www/css/_defaults.scss */
 .clearfix:after {
   clear: both; }
 
@@ -558,70 +504,74 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    http://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 @media print {
-  /* line 201, C:/wamp/www/css/_defaults.scss */
   *,
   *:before,
-  *:after {
+  *:after,
+  *:first-letter,
+  *:first-line {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+       http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
     text-shadow: none !important; }
-  /* line 210, C:/wamp/www/css/_defaults.scss */
+
   a,
   a:visited {
     text-decoration: underline; }
-  /* line 214, C:/wamp/www/css/_defaults.scss */
+
   a[href]:after {
     content: " (" attr(href) ")"; }
-  /* line 218, C:/wamp/www/css/_defaults.scss */
+
   abbr[title]:after {
     content: " (" attr(title) ")"; }
+
   /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-  /* line 228, C:/wamp/www/css/_defaults.scss */
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: ""; }
-  /* line 233, C:/wamp/www/css/_defaults.scss */
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
+
   /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-  /* line 243, C:/wamp/www/css/_defaults.scss */
+   * Printing Tables:
+   * http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
   thead {
     display: table-header-group; }
-  /* line 248, C:/wamp/www/css/_defaults.scss */
+
   tr,
   img {
     page-break-inside: avoid; }
-  /* line 252, C:/wamp/www/css/_defaults.scss */
+
   img {
     max-width: 100% !important; }
-  /* line 258, C:/wamp/www/css/_defaults.scss */
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
-  /* line 264, C:/wamp/www/css/_defaults.scss */
+
   h2,
   h3 {
     page-break-after: avoid; } }
-
 /* Best practices font face from Drift Management: http://driftmgmt.com/blog/design/2013/09/font-face-best-practices-guide/
 * With the exception of enabling bold fonts using the same font-family.
 *
@@ -677,13 +627,11 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 */
-/* line 1, C:/wamp/www/css/_menu.scss */
 #menubox {
   position: absolute;
   top: -9999px;
   left: -9999px; }
 
-/* line 7, C:/wamp/www/css/_menu.scss */
 #menuicon {
   width: 30px;
   height: 30px;
@@ -691,62 +639,50 @@ body {
   display: none;
   transition: all 0s 0.1s; }
 
-/* line 15, C:/wamp/www/css/_menu.scss */
 nav {
   background: #FFF; }
 
-/* line 19, C:/wamp/www/css/_menu.scss */
 nav ul {
   text-align: center;
   list-style: none;
   padding: 0; }
 
-/* line 25, C:/wamp/www/css/_menu.scss */
 nav ul li {
   float: left;
   display: inline;
   position: relative; }
 
-/* line 31, C:/wamp/www/css/_menu.scss */
 nav ul li:hover {
   background: #E6E6E6; }
 
-/* line 35, C:/wamp/www/css/_menu.scss */
 nav ul li a {
   display: block;
   padding: 15px 25px;
   color: #444; }
 
-/* line 41, C:/wamp/www/css/_menu.scss */
 nav ul li ul {
   position: absolute;
   width: 110px;
   background: #FFF; }
 
-/* line 47, C:/wamp/www/css/_menu.scss */
 nav ul li ul li {
   width: 110px; }
 
-/* line 51, C:/wamp/www/css/_menu.scss */
 nav ul li ul li a {
   display: block;
   padding: 15px 10px;
   color: #444; }
 
-/* line 57, C:/wamp/www/css/_menu.scss */
 nav ul li ul li:hover > a {
   background: #F7F7F7; }
 
-/* line 61, C:/wamp/www/css/_menu.scss */
 nav ul li ul li ul {
   left: 110px;
   top: 0; }
 
-/* line 66, C:/wamp/www/css/_menu.scss */
 .no-js nav ul {
   display: none; }
 
-/* line 70, C:/wamp/www/css/_menu.scss */
 .no-js nav li:hover ul {
   display: block; }
 
@@ -761,46 +697,45 @@ html {
 } */
 /* Change max-width to different steps based on content ----------- */
 @media only screen and (max-width: 959px) {
-  /* line 4, C:/wamp/www/css/_responsive.scss */
   nav ul {
     display: none; }
-  /* line 8, C:/wamp/www/css/_responsive.scss */
+
   #menubox:checked ~ nav ul {
     display: block;
     text-align: left; }
-  /* line 13, C:/wamp/www/css/_responsive.scss */
+
   #menubox:checked ~ nav ul li {
     display: block;
     float: none;
     width: 110px; }
-  /* line 19, C:/wamp/www/css/_responsive.scss */
+
   #menubox:checked ~ nav ul li ul {
     display: block;
     left: 110px;
     top: 0; }
+
   /*#menubox:checked ~ nav ul li {
-        display: block;
-        text-align: left;
-        width: 100px;
-        float: none;
-        margin-left: 15px;
-        overflow: hidden;
-    }
-    
-    #menubox:checked ~ nav ul ul {
-        display: block;
-        background-color: transparent;
-        margin-top: 0;
-        position: relative;
-        z-index: 99;
-        margin-bottom: 10px;
-    }
-    
-    #menubox:checked ~ nav ul ul li {
-        width: 100px;
-        text-align: left;
-    }*/
-  /* line 48, C:/wamp/www/css/_responsive.scss */
+      display: block;
+      text-align: left;
+      width: 100px;
+      float: none;
+      margin-left: 15px;
+      overflow: hidden;
+  }
+  
+  #menubox:checked ~ nav ul ul {
+      display: block;
+      background-color: transparent;
+      margin-top: 0;
+      position: relative;
+      z-index: 99;
+      margin-bottom: 10px;
+  }
+  
+  #menubox:checked ~ nav ul ul li {
+      width: 100px;
+      text-align: left;
+  }*/
   #menuicon {
     display: block;
     z-index: 25;
