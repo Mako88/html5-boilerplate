@@ -8,7 +8,25 @@ $(function () {
    $('nav li ul').hide();
 
    var onclick;
+    var current;
    $('nav ul li a').on('touchstart', function() {
+       current = $(this);
+       $('nav ul li a').each(function() {
+           if (!$(this).is(current) && !$(this).is(current.parents('li').children('a'))) {
+                if ($(this).parent().children('ul').hasClass("open")) {
+                    if ($(this).data('onclick') != undefined) {
+                        onclick = $(this).data('onclick');
+                        $(this).attr('onclick', onclick);
+                    }
+                    else {
+                        $(this).removeAttr('onclick');
+                    }
+                    $(this).parent().children('ul').stop(true, true).slideUp(100);
+                    $(this).parent().children('ul').removeClass("open");
+                }
+           }
+        });
+       
        if (!($(this).parent().has('ul').length)) {
            return true;
        }
@@ -22,7 +40,7 @@ $(function () {
             $(this).parent().children('ul').addClass("open");
        }
        else {
-            if (jQuery.hasData($(this)[0])) {
+            if ($(this).data('onclick') != undefined) {
                 onclick = $(this).data('onclick');
                 $(this).attr('onclick', onclick);
             }
@@ -34,21 +52,21 @@ $(function () {
        }
     });
 
-   var container = $('nav ul li a');
-
    $(document).on('touchstart', function() {
-       if (!container.is(event.target) && container.has(event.target).length === 0)
+       if (!$('nav').is(event.target) && $('nav').has(event.target).length === 0)
         {
-            container.each(function() {
-                if (jQuery.hasData($(this)[0])) {
-                    onclick = $(this).data('onclick');
-                    $(this).attr('onclick', onclick);
+            $('nav ul li a').each(function() {
+                if ($(this).parent().children('ul').hasClass("open")) {
+                    if ($(this).data('onclick') != undefined) {
+                        onclick = $(this).data('onclick');
+                        $(this).attr('onclick', onclick);
+                    }
+                    else {
+                        $(this).removeAttr('onclick');
+                    }
+                    $(this).parent().children('ul').stop(true, true).slideUp(100);
+                    $(this).parent().children('ul').removeClass("open");
                 }
-                else {
-                    $(this).removeAttr('onclick');
-                }
-                $(this).parent().children('ul').stop(true, true).slideUp(100);
-                $(this).parent().children('ul').removeClass("open");
             });
         }
    });
