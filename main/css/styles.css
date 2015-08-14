@@ -714,28 +714,6 @@ html {
     left: 110px;
     top: 0; }
 
-  /*#menubox:checked ~ nav ul li {
-      display: block;
-      text-align: left;
-      width: 100px;
-      float: none;
-      margin-left: 15px;
-      overflow: hidden;
-  }
-  
-  #menubox:checked ~ nav ul ul {
-      display: block;
-      background-color: transparent;
-      margin-top: 0;
-      position: relative;
-      z-index: 99;
-      margin-bottom: 10px;
-  }
-  
-  #menubox:checked ~ nav ul ul li {
-      width: 100px;
-      text-align: left;
-  }*/
   #menuicon {
     display: block;
     z-index: 25;
