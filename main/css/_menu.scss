@@ -40,12 +40,12 @@ nav ul li a {
 
 nav ul li ul {
     position:absolute;
-    width:110px;
+    width:100%;
     background:#FFF;
 }
 
 nav ul li ul li {
-    width:110px;
+    width:100%;
 }
 
 nav ul li ul li a {
@@ -59,7 +59,7 @@ nav ul li ul li:hover > a {
 }
 
 nav ul li ul li ul {
-    left: 110px;
+    left: 100%;
     top: 0;
 }
 
