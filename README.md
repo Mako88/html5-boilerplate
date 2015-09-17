@@ -13,7 +13,7 @@ That Guy Boilerplate is a modified version of [HTML5 Boilerplate](http://html5bo
 ## Notes
 
 1. That Guy Boilerplate makes use of SASS for its CSS. To find out how to use it, go [here](http://sass-lang.com/).
-2. You will need to visit index.php, globals.php, 404.php and 403.php in your web browser before you can edit them from within Couch.
+2. You will need to visit all of the .php files in your web browser before you can edit them from within Couch.
 3. That Guy Boilerplate comes with a .htaccess file. When you generate a .htaccess file after enabling pretty URLs you will need to do the following:
   1. Add the line `<IfModule mod_rewrite.c>` to the bottom of the existing .htaccess file.
   2. Copy everything beneath the `#DO NOT EDIT BELOW THIS` line in the generated .htaccess to the bottom of the existing .htaccess (beneath the line you added above).
