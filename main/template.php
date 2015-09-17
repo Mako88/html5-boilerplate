@@ -1,13 +1,13 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='403 Page' />
+<cms:template title='Template Page' />
 
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Error 403 | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
-        <meta name="description" content="There has been an Error 403: Access Denied.">
+        <title>Under Construction | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
+        <meta name="description" content="<cms:get_custom_field 'site_desc' masterpage='globals.php' />">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/styles.css">
@@ -22,9 +22,9 @@
                 <!--[if lt IE 9]>
                     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
                 <![endif]-->
-                <h1>Error 403: Access Denied</h1>
+                <h1>Under Construction</h1>
                 <cms:editable name='main_content' type='richtext' label='Main Content'>
-                    <p>We're sorry, it looks like you tried to go somewhere that you're not allowed to access. Please use the menu to navigate to a different page. If you believe this shouldn't have happened, please contact us, and we'll do our best to fix it ASAP.</p>
+                    <p>We're sorry, but this page is currently under construction. Please check back later.</p>
                 </cms:editable>
             </div>
 

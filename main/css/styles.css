@@ -203,6 +203,7 @@ samp {
  */
 button,
 input,
+#contact-form textarea,
 optgroup,
 select,
 textarea {
@@ -238,8 +239,12 @@ select {
  */
 button,
 html input[type="button"],
+html #contact-form textarea[type="button"],
+#contact-form html textarea[type="button"],
 input[type="reset"],
-input[type="submit"] {
+#contact-form textarea[type="reset"],
+input[type="submit"],
+#contact-form textarea[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -249,14 +254,17 @@ input[type="submit"] {
  * Re-set default cursor for disabled elements.
  */
 button[disabled],
-html input[disabled] {
+html input[disabled],
+html #contact-form textarea[disabled],
+#contact-form html textarea[disabled] {
   cursor: default; }
 
 /**
  * Remove inner padding and border in Firefox 4+.
  */
 button::-moz-focus-inner,
-input::-moz-focus-inner {
+input::-moz-focus-inner,
+#contact-form textarea::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
@@ -264,7 +272,7 @@ input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-input {
+input, #contact-form textarea {
   line-height: normal; }
 
 /**
@@ -274,8 +282,9 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"], #contact-form textarea[type="checkbox"],
+input[type="radio"],
+#contact-form textarea[type="radio"] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -286,15 +295,16 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button, #contact-form textarea[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button,
+#contact-form textarea[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
  */
-input[type="search"] {
+input[type="search"], #contact-form textarea[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   box-sizing: content-box;
@@ -305,8 +315,9 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button, #contact-form textarea[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+#contact-form textarea[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 /**
@@ -367,7 +378,11 @@ html {
   font-size: 1em;
   line-height: 1.4;
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
 
 body {
   min-height: 100%;
@@ -641,44 +656,35 @@ body {
 
 nav {
   background: #FFF; }
-
-nav ul {
-  text-align: center;
-  list-style: none;
-  padding: 0; }
-
-nav ul li {
-  float: left;
-  display: inline;
-  position: relative; }
-
-nav ul li:hover {
-  background: #E6E6E6; }
-
-nav ul li a {
-  display: block;
-  padding: 15px 25px;
-  color: #444; }
-
-nav ul li ul {
-  position: absolute;
-  width: 110px;
-  background: #FFF; }
-
-nav ul li ul li {
-  width: 110px; }
-
-nav ul li ul li a {
-  display: block;
-  padding: 15px 10px;
-  color: #444; }
-
-nav ul li ul li:hover > a {
-  background: #F7F7F7; }
-
-nav ul li ul li ul {
-  left: 110px;
-  top: 0; }
+  nav ul {
+    text-align: center;
+    list-style: none;
+    padding: 0; }
+    nav ul li {
+      float: left;
+      display: inline;
+      position: relative; }
+    nav ul li a {
+      display: block;
+      padding: 15px 25px;
+      color: #444;
+      text-decoration: none; }
+    nav ul li:hover, nav ul li.current {
+      background: #E6E6E6; }
+  nav ul li ul {
+    position: absolute;
+    width: 100%;
+    background: #FFF; }
+    nav ul li ul li {
+      width: 100%; }
+    nav ul li ul li a {
+      display: block;
+      padding: 15px 10px;
+      color: #444;
+      text-decoration: none; }
+  nav ul li ul li ul {
+    left: 100%;
+    top: 0; }
 
 .no-js nav ul {
   display: none; }
@@ -686,14 +692,45 @@ nav ul li ul li ul {
 .no-js nav li:hover ul {
   display: block; }
 
+#contact-form ul {
+  list-style: none; }
+#contact-form ul li {
+  margin: 15px 0; }
+#contact-form ul li label {
+  width: 75px;
+  margin-bottom: 5px;
+  text-align: right;
+  margin-right: 25px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 9px; }
+#contact-form input, #contact-form textarea {
+  border-radius: 5px;
+  width: 250px;
+  padding: 9px;
+  outline: 0;
+  border: 1px solid gray;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); }
+#contact-form input:focus, #contact-form textarea:focus {
+  border: 2px solid gray; }
+#contact-form textarea {
+  width: 400px;
+  height: 200px; }
+#contact-form input[type="submit"], #contact-form textarea[type="submit"] {
+  min-width: 100px;
+  width: auto;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  color: #222;
+  background: linear-gradient(#fff, #ddd);
+  border: 1px solid #ddd; }
+#contact-form .error {
+  color: red; }
+
 /* Template for a full-size background image
 
 html {
     background: url("../img/test.jpg") no-repeat fixed center center;
     background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
 } */
 /* Change max-width to different steps based on content ----------- */
 @media only screen and (max-width: 959px) {

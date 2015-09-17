@@ -9,6 +9,7 @@
         <img src="img/icons/menu.png" id="menuicon" />
     </label>
     <ul>
-        <li><a href="<cms:link 'index.php' />" <cms:if k_template_name=='index.php'>class="current"</cms:if> >Home</a></li>
+        <li <cms:if k_template_name=='index.php'>class="current"</cms:if> ><a href="<cms:link 'index.php' />">Home</a></li>
+        <li <cms:if k_template_name=='contact.php'>class="current"</cms:if> ><a href="<cms:link 'contact.php' />">Contact</a></li>
     </ul>
 </nav>

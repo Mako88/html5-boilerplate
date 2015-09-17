@@ -15,15 +15,15 @@
     </head>
     <body>
         <div id="wrapper">
-            <!--[if lt IE 9]>
-                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
 
             <cms:embed 'header.html' />
             
             <div id="content">
+                <!--[if lt IE 9]>
+                    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <![endif]-->
                 <h1>Error 404: File Not Found</h1>
-                <cms:editable name='main_content' type='richtext'>
+                <cms:editable name='main_content' type='richtext' label='Main Content'>
                     <p>We're sorry, it looks like you tried to go somewhere that doesn't exist. Please use the menu to navigate to a different page. If you believe this shouldn't have happened, please contact us, and we'll do our best to fix it ASAP.</p>
                 </cms:editable>
             </div>
