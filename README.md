@@ -8,7 +8,7 @@ That Guy Boilerplate is a modified version of [HTML5 Boilerplate](http://html5bo
 1. Download the master as a zip file [here](https://github.com/Mako88/thatguy-boilerplate/archive/master.zip).
 2. Open up the 'main' folder and copy its contents to your server
 3. Download couch from [here](http://couchcms.com), unzip it, and copy the "couch" folder to your server (it will need to be merged with the one already present).
-4. Follow the instructions in the tutorial [here](http://docs.couchcms.com/tutorials/portfolio-site/building-a-real-world-site.html) to connect to your database and get Couch setup. Also set K_REMOVE_FOOTER_LINK to '1' in the config.php file since it is included in That Guy Boilerplate by default.
+4. Follow the instructions in the tutorial [here](http://docs.couchcms.com/tutorials/portfolio-site/building-a-real-world-site.html) to connect to your database and get Couch setup.
 
 ## Notes
 
