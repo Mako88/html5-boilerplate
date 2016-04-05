@@ -19,6 +19,7 @@ nav {
         text-align: center;
         list-style: none;
         padding: 0;
+		overflow: hidden;
         
         li {
             float: left;
@@ -59,12 +60,4 @@ nav {
         left: 100%;
         top: 0;
     }
-}
-
-.no-js nav ul {
-    display: none;
-}
-
-.no-js nav li:hover ul {
-    display: block;
 }
