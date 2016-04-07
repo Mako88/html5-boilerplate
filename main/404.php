@@ -1,5 +1,5 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='404 Page' />
+<cms:template title='404 Page' hidden='1' />
 
 <!doctype html>
 <html lang="en">
