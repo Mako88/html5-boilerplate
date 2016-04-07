@@ -10,7 +10,7 @@
         <meta name="description" content="<cms:get_custom_field 'site_desc' masterpage='globals.php' />">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="<cms:show k_site_link />/css/styles.css">
+        <link rel="stylesheet" href="<cms:show k_site_link />css/styles.css">
     </head>
     <body>
         <div id="wrapper">
