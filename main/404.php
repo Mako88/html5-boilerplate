@@ -10,7 +10,7 @@
         <meta name="description" content="There has been an Error 404: File Not Found.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="<cms:show k_site_link />/css/styles.css">
     </head>
     <body>
         <div id="wrapper">
