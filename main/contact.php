@@ -78,6 +78,10 @@
                                 <p class="error">Please enter a message.</p>
                             </cms:if>
                         </li>
+                        <li class="clearfix checkbox">
+                            <p>Select your favorite cartoon characters.</p>
+                            <cms:input type="checkbox" name="toon" opt_values="Goofy | Donald | Bugs Bunny=Bugs | Scooby Doo=Scoob" />
+                        </li>
                         <li class="clearfix">
                             <label>&nbsp;</label>
                             <cms:input name="submit" type="submit" value="Send" />

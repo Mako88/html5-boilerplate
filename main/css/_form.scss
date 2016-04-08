@@ -18,6 +18,21 @@
         padding: 9px;
     }
     
+    ul li.checkbox {
+        
+        label {
+            display: block;
+            width: auto;
+            text-align: left;
+            margin-left: 100px;
+        }
+        
+        input {
+            width: auto;
+            margin-right: 10px;
+        }
+    }
+    
     input {
         border-radius: 5px;
         width: 250px;

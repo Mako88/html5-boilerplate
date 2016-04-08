@@ -783,6 +783,16 @@ nav ul li ul li ul {
   vertical-align: top;
   padding: 9px;
 }
+.form ul li.checkbox label {
+  display: block;
+  width: auto;
+  text-align: left;
+  margin-left: 100px;
+}
+.form ul li.checkbox input, .form ul li.checkbox textarea {
+  width: auto;
+  margin-right: 10px;
+}
 .form input, .form textarea {
   border-radius: 5px;
   width: 250px;
