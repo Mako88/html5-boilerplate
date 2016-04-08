@@ -17,6 +17,7 @@ That Guy Boilerplate is a modified version of [HTML5 Boilerplate](http://html5bo
 3. That Guy Boilerplate comes with a .htaccess file. When you generate a .htaccess file after enabling pretty URLs you will need to do the following:
   1. Add the line `<IfModule mod_rewrite.c>` to the bottom of the existing .htaccess file.
   2. Copy everything beneath the `#DO NOT EDIT BELOW THIS` line in the generated .htaccess to the bottom of the existing .htaccess (beneath the line you added above).
+4. I have included tim's "Too Many URLs" addon (Credit [here](http://www.couchcms.com/forum/viewtopic.php?p=21365#p21365)) It checks the number of URL's in the contact form message and only allows the number that you set (default is 1).
 
 ## Contributing
 
