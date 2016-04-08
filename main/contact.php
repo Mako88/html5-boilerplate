@@ -25,7 +25,11 @@
                 <cms:editable name='address' label='Your Address' type='richtext'>
                     <p>Address</p>
                 </cms:editable>
-
+                
+                <cms:if "<cms:get_flash 'success_msg' />" >
+                    <p class="form-success"><cms:get_flash 'success_msg' /></p>
+                </cms:if>
+                
                 <cms:form action='' method='post' id='contact-form'>
                     <cms:if k_success>
                         <cms:if frm_name2 || frm_name3 != 'Please do not edit this text.'>
@@ -34,14 +38,16 @@
                             <cms:if "<cms:too_many_urls in='frm_message' allowed='1' />" >
                                 <p class="error">Sorry. There are too many URLs in your message.</p>
                             <cms:else/>
-                                <p class="form-success">Thank you for contacting us. We will reply to you as soon as possible.</p>
                                 <cms:send_mail from=k_email_from to=k_email_to subject="<cms:get_custom_field 'site_name' masterpage='globals.php' /> Contact Form">
                                     Name: <cms:show frm_name />
                                     Email: <cms:show frm_email />
                                     
                                     Message:
-                                    <cms_show frm_message />
+                                    <cms:show frm_message />
                                 </cms:send_mail>
+                                
+                                <cms:set_flash name='success_msg' value="Thank you for contacting us. We will reply to you as soon as possible." />
+                                <cms:redirect k_page_link /> 
                             </cms:if>
                         </cms:if>
                     </cms:if>
