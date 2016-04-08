@@ -30,7 +30,7 @@
                     <p class="form-success"><cms:get_flash 'success_msg' /></p>
                 </cms:if>
                 
-                <cms:form action='' method='post' id='contact-form'>
+                <cms:form action='' method='post' id='contact-form' class='form'>
                     <cms:if k_success>
                         <cms:if frm_name2 || frm_name3 != 'Please do not edit this text.'>
                             <p class="error">You edited a field meant to trap spambots. If you're a human please try again and leave those fields untouched.</p>
