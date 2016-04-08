@@ -25,18 +25,22 @@
                 <cms:editable name='address' label='Your Address' type='richtext'>
                     <p>Address</p>
                 </cms:editable>
-                <cms:if k_success>
-                    <cms:if name2 || name3 != 'Please do not edit this text.'>
-                        <p style="color: red;">You edited a field meant to trap spambots. If you're a human please try again and leave those fields untouched.</p>
-                    <cms:else />
-                        <p class="form-success">Thank you for contacting us. We will reply to you as soon as possible.</p>
-                        <cms:send_mail from=k_email_from to=k_email_to subject="<cms:get_custom_field 'site_name' masterpage='globals.php' /> Contact Form">
-                            <cms:show k_success />
-                        </cms:send_mail>
-                    </cms:if>
-                </cms:if>
 
                 <cms:form action='' method='post' id='contact-form'>
+                    <cms:if k_success>
+                        <cms:if name2 || name3 != 'Please do not edit this text.'>
+                            <p class="error">You edited a field meant to trap spambots. If you're a human please try again and leave those fields untouched.</p>
+                        <cms:else />
+                            <cms:if "<cms:too_many_urls in='frm_message' allowed='1' />" >
+                                <p class="error">Sorry. There are too many URLs in your message.</p>
+                            <cms:else/>
+                                <p class="form-success">Thank you for contacting us. We will reply to you as soon as possible.</p>
+                                <cms:send_mail from=k_email_from to=k_email_to subject="<cms:get_custom_field 'site_name' masterpage='globals.php' /> Contact Form">
+                                    <cms:show k_success />
+                                </cms:send_mail>
+                            </cms:if>
+                        </cms:if>
+                    </cms:if>
                     <ul>
                         <li class="hidden">
                             <cms:input type='text' name='name2' id='name2' />
