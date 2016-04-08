@@ -10,13 +10,15 @@ html {
   -ms-text-size-adjust: 100%;
   /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove default margin.
  */
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 /* HTML5 display definitions
    ========================================================================== */
@@ -39,7 +41,8 @@ menu,
 nav,
 section,
 summary {
-  display: block; }
+  display: block;
+}
 
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
@@ -52,7 +55,8 @@ video {
   display: inline-block;
   /* 1 */
   vertical-align: baseline;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Prevent modern browsers from displaying `audio` without controls.
@@ -60,7 +64,8 @@ video {
  */
 audio:not([controls]) {
   display: none;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
@@ -68,7 +73,8 @@ audio:not([controls]) {
  */
 [hidden],
 template {
-  display: none; }
+  display: none;
+}
 
 /* Links
    ========================================================================== */
@@ -76,7 +82,8 @@ template {
  * Remove the gray background color from active links in IE 10.
  */
 a {
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 /**
  * Improve readability of focused elements when they are also in an
@@ -84,7 +91,8 @@ a {
  */
 a:active,
 a:hover {
-  outline: 0; }
+  outline: 0;
+}
 
 /* Text-level semantics
    ========================================================================== */
@@ -92,20 +100,23 @@ a:hover {
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
 abbr[title] {
-  border-bottom: 1px dotted; }
+  border-bottom: 1px dotted;
+}
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
 b,
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /**
  * Address styling not present in Safari and Chrome.
  */
 dfn {
-  font-style: italic; }
+  font-style: italic;
+}
 
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
@@ -113,20 +124,23 @@ dfn {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0.67em 0;
+}
 
 /**
  * Address styling not present in IE 8/9.
  */
 mark {
   background: #ff0;
-  color: #000; }
+  color: #000;
+}
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
 small {
-  font-size: 80%; }
+  font-size: 80%;
+}
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
@@ -136,13 +150,16 @@ sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 /* Embedded content
    ========================================================================== */
@@ -150,13 +167,15 @@ sub {
  * Remove border when inside `a` element in IE 8/9/10.
  */
 img {
-  border: 0; }
+  border: 0;
+}
 
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
 svg:not(:root) {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /* Grouping content
    ========================================================================== */
@@ -164,20 +183,23 @@ svg:not(:root) {
  * Address margin not present in IE 8/9 and Safari.
  */
 figure {
-  margin: 1em 40px; }
+  margin: 1em 40px;
+}
 
 /**
  * Address differences between Firefox and other browsers.
  */
 hr {
   box-sizing: content-box;
-  height: 0; }
+  height: 0;
+}
 
 /**
  * Contain overflow in all browsers.
  */
 pre {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * Address odd `em`-unit font size rendering in all browsers.
@@ -187,7 +209,8 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 /* Forms
    ========================================================================== */
@@ -212,13 +235,15 @@ textarea {
   font: inherit;
   /* 2 */
   margin: 0;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
 button {
-  overflow: visible; }
+  overflow: visible;
+}
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -228,7 +253,8 @@ button {
  */
 button,
 select {
-  text-transform: none; }
+  text-transform: none;
+}
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -248,7 +274,8 @@ input[type="submit"],
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
-  /* 3 */ }
+  /* 3 */
+}
 
 /**
  * Re-set default cursor for disabled elements.
@@ -257,7 +284,8 @@ button[disabled],
 html input[disabled],
 html #contact-form textarea[disabled],
 #contact-form html textarea[disabled] {
-  cursor: default; }
+  cursor: default;
+}
 
 /**
  * Remove inner padding and border in Firefox 4+.
@@ -266,14 +294,16 @@ button::-moz-focus-inner,
 input::-moz-focus-inner,
 #contact-form textarea::-moz-focus-inner {
   border: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /**
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
 input, #contact-form textarea {
-  line-height: normal; }
+  line-height: normal;
+}
 
 /**
  * It's recommended that you don't attempt to style these elements.
@@ -288,7 +318,8 @@ input[type="radio"],
   box-sizing: border-box;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Fix the cursor style for Chrome's increment/decrement buttons. For certain
@@ -298,7 +329,8 @@ input[type="radio"],
 input[type="number"]::-webkit-inner-spin-button, #contact-form textarea[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button,
 #contact-form textarea[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
+  height: auto;
+}
 
 /**
  * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
@@ -308,7 +340,8 @@ input[type="search"], #contact-form textarea[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   box-sizing: content-box;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove inner padding and search cancel button in Safari and Chrome on OS X.
@@ -318,7 +351,8 @@ input[type="search"], #contact-form textarea[type="search"] {
 input[type="search"]::-webkit-search-cancel-button, #contact-form textarea[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration,
 #contact-form textarea[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+}
 
 /**
  * Define consistent border, margin, and padding.
@@ -326,7 +360,8 @@ input[type="search"]::-webkit-search-decoration,
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.625em 0.75em;
+}
 
 /**
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
@@ -336,20 +371,23 @@ legend {
   border: 0;
   /* 1 */
   padding: 0;
-  /* 2 */ }
+  /* 2 */
+}
 
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
 textarea {
-  overflow: auto; }
+  overflow: auto;
+}
 
 /**
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
 optgroup {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 /* Tables
    ========================================================================== */
@@ -358,11 +396,13 @@ optgroup {
  */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 td,
 th {
-  padding: 0; }
+  padding: 0;
+}
 
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 /*
@@ -379,14 +419,17 @@ html {
   line-height: 1.4;
   height: 100%;
   overflow: auto;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
 body {
   min-height: 100%;
-  overflow: auto; }
+  overflow: auto;
+}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -397,11 +440,13 @@ body {
  */
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none; }
+  text-shadow: none;
+}
 
 /*
  * A better looking default horizontal rule
@@ -412,7 +457,8 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -425,7 +471,8 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 /*
  * Remove default fieldset styles.
@@ -433,13 +480,15 @@ video {
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /*
  * Allow only vertical resizing of textareas.
  */
 textarea {
-  resize: vertical; }
+  resize: vertical;
+}
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -448,7 +497,8 @@ textarea {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0; }
+  padding: 0.2em 0;
+}
 
 /* ==========================================================================
    Helper classes
@@ -457,7 +507,8 @@ textarea {
  * Hide visually and from screen readers:
  */
 .hidden {
-  display: none !important; }
+  display: none !important;
+}
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -471,7 +522,8 @@ textarea {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px; }
+  width: 1px;
+}
 
 /*
  * Extends the .visuallyhidden class to allow the element
@@ -485,13 +537,15 @@ textarea {
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto; }
+  width: auto;
+}
 
 /*
  * Hide visually and from screen readers, but maintain layout
  */
 .invisible {
-  visibility: hidden; }
+  visibility: hidden;
+}
 
 /*
  * Clearfix: contain floats
@@ -509,10 +563,12 @@ textarea {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */ }
+  /* 2 */
+}
 
 .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -520,9 +576,11 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
+  /* Style adjustments for viewports that meet the condition */
+}
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */ }
+  /* Style adjustments for high resolution devices */
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -539,17 +597,21 @@ textarea {
     /* Black prints faster:
        http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
-    text-shadow: none !important; }
+    text-shadow: none !important;
+  }
 
   a,
   a:visited {
-    text-decoration: underline; }
+    text-decoration: underline;
+  }
 
   a[href]:after {
-    content: " (" attr(href) ")"; }
+    content: " (" attr(href) ")";
+  }
 
   abbr[title]:after {
-    content: " (" attr(title) ")"; }
+    content: " (" attr(title) ")";
+  }
 
   /*
    * Don't show links that are fragment identifiers,
@@ -557,36 +619,44 @@ textarea {
    */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
-    content: ""; }
+    content: "";
+  }
 
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
   /*
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
   thead {
-    display: table-header-group; }
+    display: table-header-group;
+  }
 
   tr,
   img {
-    page-break-inside: avoid; }
+    page-break-inside: avoid;
+  }
 
   img {
-    max-width: 100% !important; }
+    max-width: 100% !important;
+  }
 
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3; }
+    widows: 3;
+  }
 
   h2,
   h3 {
-    page-break-after: avoid; } }
+    page-break-after: avoid;
+  }
+}
 /* Best practices font face from Drift Management: http://driftmgmt.com/blog/design/2013/09/font-face-best-practices-guide/
 * With the exception of enabling bold fonts using the same font-family.
 *
@@ -645,57 +715,65 @@ body {
 #menubox {
   position: absolute;
   top: -9999px;
-  left: -9999px; }
+  left: -9999px;
+}
 
 #menuicon {
   width: 30px;
   height: 30px;
   position: relative;
   display: none;
-  transition: all 0s 0.1s; }
+  transition: all 0s 0.1s;
+}
 
 nav {
-  background: #FFF; }
-  nav ul {
-    text-align: center;
-    list-style: none;
-    padding: 0; }
-    nav ul li {
-      float: left;
-      display: inline;
-      position: relative; }
-    nav ul li a {
-      display: block;
-      padding: 15px 25px;
-      color: #444;
-      text-decoration: none; }
-    nav ul li:hover, nav ul li.current {
-      background: #E6E6E6; }
-  nav ul li ul {
-    position: absolute;
-    width: 100%;
-    background: #FFF; }
-    nav ul li ul li {
-      width: 100%; }
-    nav ul li ul li a {
-      display: block;
-      padding: 15px 10px;
-      color: #444;
-      text-decoration: none; }
-  nav ul li ul li ul {
-    left: 100%;
-    top: 0; }
-
-.no-js nav ul {
-  display: none; }
-
-.no-js nav li:hover ul {
-  display: block; }
+  background: #FFF;
+}
+nav ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+  display: inline;
+  position: relative;
+}
+nav ul li a {
+  display: block;
+  padding: 15px 25px;
+  color: #444;
+  text-decoration: none;
+}
+nav ul li:hover, nav ul li.current {
+  background: #E6E6E6;
+}
+nav ul li ul {
+  position: absolute;
+  width: 100%;
+  background: #FFF;
+}
+nav ul li ul li {
+  width: 100%;
+}
+nav ul li ul li a {
+  display: block;
+  padding: 15px 10px;
+  color: #444;
+  text-decoration: none;
+}
+nav ul li ul li ul {
+  left: 100%;
+  top: 0;
+}
 
 #contact-form ul {
-  list-style: none; }
+  list-style: none;
+}
 #contact-form ul li {
-  margin: 15px 0; }
+  margin: 15px 0;
+}
 #contact-form ul li label {
   width: 75px;
   margin-bottom: 5px;
@@ -703,28 +781,34 @@ nav {
   margin-right: 25px;
   display: inline-block;
   vertical-align: top;
-  padding: 9px; }
+  padding: 9px;
+}
 #contact-form input, #contact-form textarea {
   border-radius: 5px;
   width: 250px;
   padding: 9px;
   outline: 0;
   border: 1px solid gray;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
 #contact-form input:focus, #contact-form textarea:focus {
-  border: 2px solid gray; }
+  border: 2px solid gray;
+}
 #contact-form textarea {
   width: 400px;
-  height: 200px; }
+  height: 200px;
+}
 #contact-form input[type="submit"], #contact-form textarea[type="submit"] {
   min-width: 100px;
   width: auto;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
   color: #222;
   background: linear-gradient(#fff, #ddd);
-  border: 1px solid #ddd; }
+  border: 1px solid #ddd;
+}
 #contact-form .error {
-  color: red; }
+  color: red;
+}
 
 /* Template for a full-size background image
 
@@ -732,29 +816,55 @@ html {
     background: url("../img/test.jpg") no-repeat fixed center center;
     background-size: cover;
 } */
+/* Template for a sticky footer
+
+#wrapper {
+    min-height: 100vh;
+}
+
+#content {
+    padding-bottom: 50px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+#couch {
+    margin: auto;
+} */
 /* Change max-width to different steps based on content ----------- */
 @media only screen and (max-width: 959px) {
   nav ul {
-    display: none; }
+    display: none;
+  }
 
   #menubox:checked ~ nav ul {
     display: block;
-    text-align: left; }
+    text-align: left;
+  }
 
   #menubox:checked ~ nav ul li {
     display: block;
     float: none;
-    width: 110px; }
+    width: 110px;
+  }
 
   #menubox:checked ~ nav ul li ul {
     display: block;
     left: 110px;
-    top: 0; }
+    top: 0;
+  }
 
   #menuicon {
     display: block;
     z-index: 25;
     margin-top: 10px;
-    margin-left: 10px; } }
+    margin-left: 10px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
