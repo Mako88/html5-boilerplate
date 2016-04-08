@@ -28,7 +28,7 @@
 
                 <cms:form action='' method='post' id='contact-form'>
                     <cms:if k_success>
-                        <cms:if name2 || name3 != 'Please do not edit this text.'>
+                        <cms:if frm_name2 || frm_name3 != 'Please do not edit this text.'>
                             <p class="error">You edited a field meant to trap spambots. If you're a human please try again and leave those fields untouched.</p>
                         <cms:else />
                             <cms:if "<cms:too_many_urls in='frm_message' allowed='1' />" >
@@ -47,6 +47,7 @@
                     </cms:if>
                     <ul>
                         <li class="hidden">
+                            <label for="name2">Please do not enter anything in this field.</label>
                             <cms:input type='text' name='name2' id='name2' />
                             <cms:input type='text' name='name3' id='name3' value='Please do not edit this text.' />
                         </li>
