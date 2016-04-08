@@ -36,7 +36,11 @@
                             <cms:else/>
                                 <p class="form-success">Thank you for contacting us. We will reply to you as soon as possible.</p>
                                 <cms:send_mail from=k_email_from to=k_email_to subject="<cms:get_custom_field 'site_name' masterpage='globals.php' /> Contact Form">
-                                    <cms:show k_success />
+                                    Name: <cms:show frm_name />
+                                    Email: <cms:show frm_email />
+                                    
+                                    Message:
+                                    <cms_show frm_message />
                                 </cms:send_mail>
                             </cms:if>
                         </cms:if>
