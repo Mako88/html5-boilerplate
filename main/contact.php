@@ -25,12 +25,13 @@
                 <cms:if "<cms:too_many_urls in='frm_message' allowed='1' />" >
                     <p class="error">Sorry. There are too many URLs in your message.</p>
                 <cms:else/>
-                    <cms:send_mail from=k_email_from to=k_email_to subject="<cms:get_custom_field 'site_name' masterpage='globals.php' /> Contact Form"> 
-                        Name: <cms:show frm_name />
-                        Email: <cms:show frm_email />
-
-                        Message:
-                        <cms:show frm_message />
+                    <cms:send_mail html='1' from=k_email_from to=k_email_to subject="<cms:get_custom_field 'site_name' masterpage='globals.php' /> Contact Form"> 
+                        <p style="text-align: left;">
+                            <b>Name:</b> <cms:show frm_name /><br />
+                            <b>Email:</b> <cms:show frm_email /><br /><br />
+                            <b>Message:</b><br />
+                            <cms:show frm_message />
+                        </p>
                     </cms:send_mail>
 
                     <cms:set_flash name='success_msg' value="Thank you for contacting us. We will reply to you as soon as possible." />
