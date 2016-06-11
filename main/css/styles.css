@@ -742,6 +742,7 @@ nav ul li ul li ul {
 }
 .form ul {
   list-style: none;
+  padding-left: 15px;
 }
 .form ul li {
   margin: 15px 0;
@@ -820,7 +821,7 @@ html {
     margin: auto;
 } */
 /* Change max-width to different steps based on content ----------- */
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 960px) {
   nav ul {
     display: none;
   }
