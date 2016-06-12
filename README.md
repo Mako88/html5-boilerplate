@@ -12,12 +12,12 @@ That Guy Boilerplate is a modified version of [HTML5 Boilerplate](http://html5bo
 
 ## Notes
 
-1. That Guy Boilerplate makes use of SASS for its CSS. To find out how to use it, go [here](http://sass-lang.com/).
-2. You will need to visit all of the .php files in your web browser before you can edit them from within Couch.
-3. That Guy Boilerplate comes with a .htaccess file. When you generate a .htaccess file after enabling pretty URLs you will need to do the following:
+1. You will need to visit all of the .php files in your web browser before you can edit them from within Couch.
+2. That Guy Boilerplate comes with a .htaccess file. When you generate a .htaccess file after enabling pretty URLs you will need to do the following:
   1. Add the line `<IfModule mod_rewrite.c>` to the bottom of the existing .htaccess file.
   2. Copy everything beneath the `#DO NOT EDIT BELOW THIS` line in the generated .htaccess to the bottom of the existing .htaccess (beneath the line you added above).
-4. I have included tim's "Too Many URLs" addon (Credit [here](http://www.couchcms.com/forum/viewtopic.php?p=21365#p21365)) It checks the number of URL's in the contact form message and only allows the number that you set (default is 1).
+3. I have included tim's "Too Many URLs" addon (Credit [here](http://www.couchcms.com/forum/viewtopic.php?p=21365#p21365)) It checks the number of URL's in the contact form message and only allows the number that you set (default is 1).
+4. That Guy Boilerplate now uses caching by default and includes a cache buster. All linked images or scripts should be linked using the <cms:cache_buster /> tag. This tag accepts one parameter: a relative link. I.E. "<cms:cache_buster 'path/to/file.css' />". Because caching is now enabled by default, you must manually re-generate the CSS after any change. To do so, visit the generate_css.php file in your browser. (You will also have to visit the css/show_generated_css.php file once on initial setup).
 
 ## Contributing
 
