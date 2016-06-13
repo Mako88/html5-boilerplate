@@ -17,7 +17,6 @@
             
             $url = trim( $link );
             if( !strlen($url) ) {die("ERROR: Tag \"".$node->name."\" is empty.");}
-            if( !file_exists($url) ) {die("ERROR: Tag \"".$node->name."\" could not find the file \"" . $url ."\"");}
             
             $path = pathinfo($url);
             $ver = '.' . filemtime(K_SITE_DIR . $link) . '.';
