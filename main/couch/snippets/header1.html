@@ -4,3 +4,21 @@
 <meta charset="utf-8" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <link rel="icon" href="<cms:cache_buster 'favicon.ico' />" />
+<cms:php>
+    $time = filemtime('<cms:show k_site_path />css/generated.css');
+    $it = new FilesystemIterator('<cms:show k_site_path />css');
+    
+    foreach ($it as $file) {
+        if($file->getExtension() == 'css') {
+            if($file->getFilename() == 'generated.css') {
+                continue;
+            }
+            if($file->getMTime() > $time) {
+                $css = file_get_contents("<cms:show k_site_link />css/generate_css.php");
+                $css = substr($css, 0, strpos($css, "<!--"));
+                file_put_contents('<cms:show k_site_path />css/generated.css', $css);
+                break;
+            }
+        }
+    }
+</cms:php>
