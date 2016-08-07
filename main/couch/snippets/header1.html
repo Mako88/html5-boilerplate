@@ -62,7 +62,10 @@ EOS;
         return preg_replace("%$re2%", '$1$2$3$4$5$6$7', $str);
     }
     
-    $time = filemtime('<cms:show k_site_path />css/generated.css');
+    $time = -1;
+    if( file_exists('<cms:show k_site_path />css/generated.css') ) {
+        $time = filemtime('<cms:show k_site_path />css/generated.css');
+    }
     $it = new FilesystemIterator('<cms:show k_site_path />css');
     
     foreach ($it as $file) {
