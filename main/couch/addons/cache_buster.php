@@ -19,8 +19,12 @@
             if( !strlen($url) ) {die("ERROR: Tag \"".$node->name."\" is empty.");}
             
             $path = pathinfo($url);
-            $ver = '.' . filemtime(K_SITE_DIR . $link) . '.';
-            if( $ver == '..' ) { $ver = '.'; }
+            if(file_exists(K_SITE_DIR . $link)) {
+                $ver = '.' . filemtime(K_SITE_DIR . $link) . '.';
+            }
+            else {
+                $ver = '.';
+            }
             return K_SITE_URL . $path['dirname'] . '/' . str_replace('.', $ver, $path['basename']);
         }
     }

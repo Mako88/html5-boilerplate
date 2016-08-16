@@ -3,7 +3,7 @@
 /* Template for a full-size background image */
 
 html {
-    background: url("<cms:cache buster "img/bg.jpg" />") no-repeat fixed center center;
+    background: url("<cms:cache_buster "img/bg.jpg" />") no-repeat fixed center center;
     background-size: cover;
 }
 
