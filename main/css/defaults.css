@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -216,6 +216,10 @@ textarea {
   a[href^="javascript:"]:after {
     content: "";
   }
+  
+  pre {
+     white-space: pre-wrap !important;
+  }
 
   pre,
   blockquote {
@@ -234,10 +238,6 @@ textarea {
   tr,
   img {
     page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
   }
 
   p,
