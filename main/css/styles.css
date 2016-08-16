@@ -1,13 +1,13 @@
 /* Remember to use cache_buster for images! */
 
-/* Template for a full-size background image
+/* Template for a full-size background image */
 
 html {
-    background: url("") no-repeat fixed center center;
+    background: url("<cms:cache buster "img/bg.jpg" />") no-repeat fixed center center;
     background-size: cover;
-}*/
+}
 
-/* Template for a sticky footer
+/* Template for a sticky footer */
 
 #wrapper {
     min-height: 100vh;
@@ -27,4 +27,4 @@ html {
 
 #couch {
     margin: auto;
-} */
+}
