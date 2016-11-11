@@ -1,4 +1,5 @@
 <?php require_once( '../couch/cms.php' ); ?>
+<cms:content_type 'text/css' />
 <cms:template title="CSS Generator" hidden='1' />
 
 <cms:embed '../../css/normalize.css' />
