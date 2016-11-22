@@ -92,6 +92,9 @@ AddDefaultCharset utf-8
 #     If your web host doesn't allow the `FollowSymlinks` option,
 #     you need to comment it out or remove it, and then uncomment
 #     the `Options +SymLinksIfOwnerMatch` line.
+#
+#     If your site is in a subdirectory, change "RewriteBase /" below
+#     to the path to your site
 <IfModule mod_rewrite.c>
     RewriteEngine On
     Options +FollowSymlinks
