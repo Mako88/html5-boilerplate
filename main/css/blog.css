@@ -1,0 +1,62 @@
+.title {
+    display: block;
+    margin: 150px auto 0 auto;
+    font-size: 50px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.date::before, .date::after {
+    content: '~';
+    font-size: 50px;
+    margin: 0 5px;
+    display: inline-block;
+    vertical-align: -8px;
+    line-height: 30px;
+}
+
+.date {
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.text {
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+.text::first-letter, .text p:first-child::first-letter {
+    font-size: 400%;
+    line-height: 0.9em;
+    float: left;
+    margin-right: 7px;
+}
+
+.pagination span, .pagination a {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#commentlist {
+    list-style: none;
+}
+
+#commentlist li {
+    overflow: hidden;
+}
+
+#commentlist li img {
+    float: left;
+    margin-right: 10px;
+}
+
+#commentlist li p {
+    float: left;
+    margin: 0;
+}
+
+#commentlist .comment_text {
+    clear: both;
+    margin-bottom: 15px;
+}
