@@ -1,0 +1,79 @@
+<cms:if k_is_commentable >
+<div class="comment-form" >
+    <h3>Post a comment</h3>
+
+    <cms:form action='' method='post' id='comment-form' class='form'>
+        <cms:if "<cms:get_flash 'success_msg' />" && k_logged_out >
+            <p class="form-success"><cms:get_flash 'success_msg' /></p>
+        <cms:else />
+            <cms:if k_success>
+                <cms:if frm_name2 || frm_name3 != 'Please do not edit this text.'>
+                    <p class="error">You edited a field meant to trap spambots. If you're a human please try again and leave those fields untouched.</p>
+                <cms:else />
+                    <cms:if "<cms:too_many_urls in='frm_k_comment' allowed='1' />" >
+                        <p class="error">Sorry. There are too many URLs in your message.</p>
+                    <cms:else/>
+                        <cms:process_comment auto_redirect='0' />
+                        <cms:if k_process_comment_success >
+                            <cms:send_mail html='1' from=k_email_from to=k_email_to subject="Comment Posted on <cms:get_custom_field 'site_name' masterpage='globals.php' />"> 
+                                <p style="text-align: left;">
+                                    <b>Name:</b> <cms:show frm_name /><br />
+                                    <b>Email:</b> <cms:show frm_email /><br /><br />
+                                    <b>Comment:</b><br />
+                                    <cms:show frm_comment />
+                                </p>
+                            </cms:send_mail>
+                            <cms:set_flash name='success_msg' value="Thank you for contacting us. We will reply to you as soon as possible." />
+                            <cms:redirect k_page_link />
+                        <cms:else />
+                            <p class="error">Could not post comment!<br>
+                                The following error occured while processing your comment:<br>
+                                <cms:show k_process_comment_error />
+                            </p>
+                        </cms:if>
+                    </cms:if>
+                </cms:if>
+            </cms:if>
+            <ul>
+                <li class="hidden">
+                    <label for="name2">Please do not enter anything in this field.</label>
+                    <cms:input type='text' name='name2' id='name2' />
+                    <cms:input type='text' name='name3' id='name3' value='Please do not edit this text.' />
+                </li>
+                <cms:if k_logged_out>
+                    <li class="clearfix">
+                        <label for="k_author">Name:</label>
+                        <cms:input type='text' name='k_author' id='name' required='1' placeholder='Your Name...' />
+                        <cms:if k_error_k_author>
+                            <p class="error">Please enter your name.</p>
+                        </cms:if>
+                    </li>
+                    <li class="clearfix">
+                        <label for="k_email">Email:</label>
+                        <cms:input type='text' name='k_email' id='email' required='1' validator='email' placeholder='Your Email...' />
+                        <cms:if k_error_k_email>
+                            <p class="error">Please enter a valid email address.</p>
+                        </cms:if>
+                    </li>
+                <cms:else />
+                    <li class="clearfix">
+                        Logged in as <b><cms:show k_user_title /></b>.
+                        <a href="<cms:show k_logout_link />" onclick="if( confirm('Are you sure you want to logout?') ) { return true; } return false;">Logout &raquo;</a>
+                    </li> 
+                </cms:if>
+                <li class="clearfix">
+                    <label for="k_comment">Comment:</label>
+                    <cms:input type='textarea' name='k_comment' id='comment' required='1' placeholder='Your Comment...'></cms:input>
+                    <cms:if k_error_k_comment>
+                        <p class="error">Please enter a comment.</p>
+                    </cms:if>
+                </li>
+                <li class="clearfix">
+                    <label>&nbsp;</label>
+                    <cms:input name="submit" type="submit" value="Submit" />
+                </li>
+            </ul>
+    </cms:if>
+</cms:form>
+</div>
+</cms:if>
