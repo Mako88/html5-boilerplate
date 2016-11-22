@@ -7,6 +7,7 @@
 <cms:embed '../../css/fonts.css' />
 <cms:embed '../../css/menu.css' />
 <cms:embed '../../css/form.css' />
+<cms:embed '../../css/blog.css' />
 <cms:embed '../../css/styles.css' />
 <cms:embed '../../css/responsive.css' />
 
