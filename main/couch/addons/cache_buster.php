@@ -25,7 +25,18 @@
             else {
                 $ver = '.';
             }
-            return K_SITE_URL . $path['dirname'] . '/' . str_replace('.', $ver, $path['basename']);
+            
+            $pos = strrpos($path['basename'], '.');
+            
+            if($pos !== false)
+            {
+                $result = substr_replace($path['basename'], $ver, $pos, 1);
+            }
+            else {
+                die("ERROR: The path provided in tag \"".$node->name."\" does not contain a '.' character.");
+            }
+            
+            return K_SITE_URL . $path['dirname'] . '/' . $result;
         }
     }
     
