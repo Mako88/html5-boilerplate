@@ -5,62 +5,13 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 <link rel="icon" href="<cms:cache_buster 'favicon.ico' />" />
 <cms:php>
-    function minify_css($str) {
-        # remove comments first (simplifies the other regex)
-        $re1 = <<< 'EOS'
-            (?sx)
-              # quotes
-              (
-                "(?:[^"\\]++|\\.)*+"
-              | '(?:[^'\\]++|\\.)*+'
-              )
-            |
-              # comments
-              /\* (?> .*? \*/ )
-EOS;
-
-        $re2 = <<< 'EOS'
-            (?six)
-              # quotes
-              (
-                "(?:[^"\\]++|\\.)*+"
-              | '(?:[^'\\]++|\\.)*+'
-              )
-            |
-              # ; before } (and the spaces after it while we're here)
-              \s*+ ; \s*+ ( } ) \s*+
-            |
-              # all spaces around meta chars/operators
-              \s*+ ( [*$~^|]?+= | [{};,>~+-] | !important\b ) \s*+
-            |
-              # spaces right of ( [ :
-              ( [[(:] ) \s++
-            |
-              # spaces left of ) ]
-              \s++ ( [])] )
-            |
-              # spaces left (and right) of :
-              \s++ ( : ) \s*+
-              # but not in selectors: not followed by a {
-              (?!
-                (?>
-                  [^{}"']++
-                | "(?:[^"\\]++|\\.)*+"
-                | '(?:[^'\\]++|\\.)*+' 
-                )*+
-                {
-              )
-            |
-              # spaces at beginning/end of string
-              ^ \s++ | \s++ \z
-            |
-              # double spaces to single
-              (\s)\s+
-EOS;
-
-        $str = preg_replace("%$re1%", '$1', $str);
-        return preg_replace("%$re2%", '$1$2$3$4$5$6$7', $str);
-    }
+    require_once '<cms:show k_site_path />minify/minify/src/Minify.php';
+    require_once '<cms:show k_site_path />minify/minify/src/CSS.php';
+    require_once '<cms:show k_site_path />minify/minify/src/JS.php';
+    require_once '<cms:show k_site_path />minify/minify/src/Exception.php';
+    require_once '<cms:show k_site_path />minify/path-converter/src/Converter.php';
+    
+    use MatthiasMullie\Minify;
     
     $time = -1;
     if( file_exists('<cms:show k_site_path />css/generated.css') ) {
@@ -74,10 +25,11 @@ EOS;
                 continue;
             }
             if($file->getMTime() > $time) {
+                $minifier = new Minify\CSS('<cms:show k_site_path />css/normalize.css');
                 $css = file_get_contents("<cms:show k_site_link />css/generate_css.php");
                 $css = substr($css, 0, strpos($css, "<!--"));
-                $css = minify_css($css);
-                file_put_contents('<cms:show k_site_path />css/generated.css', $css);
+                $minifier = new Minify\CSS($css);
+                $minifier->minify('<cms:show k_site_path />css/generated.css');
                 break;
             }
         }
