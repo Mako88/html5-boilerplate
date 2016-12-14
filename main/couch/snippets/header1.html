@@ -27,7 +27,6 @@
             if($file->getMTime() > $time) {
                 $minifier = new Minify\CSS('<cms:show k_site_path />css/normalize.css');
                 $css = file_get_contents("<cms:show k_site_link />css/generate_css.php");
-                $css = substr($css, 0, strpos($css, "<!--"));
                 $minifier = new Minify\CSS($css);
                 $minifier->minify('<cms:show k_site_path />css/generated.css');
                 break;
