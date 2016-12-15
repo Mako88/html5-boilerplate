@@ -1,14 +1,14 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='Contact Page' />
+<cms:template title='Contact Us' />
 <cms:embed 'header1.html' />
 
-    <title>Contact | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
+    <title><cms:show k_template_title /> | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
     <meta name="description" content="Contact Us" />
 		
 <cms:embed 'header2.html' />
 			
 <div id="content">
-    <h1>Contact Us</h1>
+    <h1><cms:show k_template_title /></h1>
     <cms:editable name='address' label='Your Address' type='richtext'>
         <p>Address</p>
     </cms:editable>

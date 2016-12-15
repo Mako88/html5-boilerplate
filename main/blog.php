@@ -8,7 +8,7 @@
 
     <title>
         <cms:if k_is_list >
-            Blog 
+            <cms:show k_template_title /> 
         <cms:else />
             <cms:show k_page_title />
         </cms:if>
@@ -19,7 +19,7 @@
 <cms:embed 'header2.html' />
             
 <div id="content">
-    <h1>Our Blog</h1>
+    <h1><cms:show k_template_title /></h1>
     <cms:if k_is_list >
         <cms:pages paginate='1' limit='5'>
             <div id="<cms:show k_page_name />">
