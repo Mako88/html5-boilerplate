@@ -18,7 +18,7 @@
 
 <cms:embed 'header2.html' />
             
-<div id="content">
+<div class="content">
     <h1><cms:show k_template_title /></h1>
     <cms:if k_is_list >
         <cms:pages paginate='1' limit='5'>

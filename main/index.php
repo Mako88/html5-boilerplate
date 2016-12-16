@@ -7,7 +7,7 @@
 
 <cms:embed 'header2.html' />
 
-<div id="content">
+<div class="content">
     <h1><cms:get_custom_field 'site_name' masterpage='globals.php' /></h1>
     <h3><cms:get_custom_field 'site_desc' masterpage='globals.php' /></h3>
     <cms:editable name='main_content' type='richtext' label='Main Content'>

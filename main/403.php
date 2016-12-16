@@ -7,7 +7,7 @@
 
 <cms:embed 'header2.html' />
             
-<div id="content">
+<div class="content">
     <h1>Error 403: Access Denied</h1>
     <cms:editable name='main_content' type='richtext' label='Main Content'>
         <p>We're sorry, it looks like you tried to go somewhere that you're not allowed to access. Please use the menu to navigate to a different page. If you believe this shouldn't have happened, please contact us, and we'll do our best to fix it ASAP.</p>

@@ -7,7 +7,7 @@
 
 <cms:embed 'header2.html' />
             
-<div id="content">
+<div class="content">
     <h1>Error 404: File Not Found</h1>
     <cms:editable name='main_content' type='richtext' label='Main Content'>
         <p>We're sorry, it looks like you tried to go somewhere that doesn't exist. Please use the menu to navigate to a different page. If you believe this shouldn't have happened, please contact us, and we'll do our best to fix it ASAP.</p>

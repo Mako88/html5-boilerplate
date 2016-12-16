@@ -7,7 +7,7 @@
 
 <cms:embed 'header2.html' />
             
-<div id="content">
+<div class="content">
     <h1><cms:show k_template_title /></h1>
     <cms:editable name='main_content' type='richtext' label='Main Content'>
         <p>We're sorry, but this page is currently under construction. Please check back later.</p>
