@@ -2,13 +2,13 @@
 <cms:template title='403 Page' hidden='1' />
 <cms:embed 'header1.html' />
 
-    <title>Error 403 | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
+    <title><cms:editable name='page_title' type='text' label='Page Title'>Error 403: Access Denied</cms:editable> | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
     <meta name="description" content="There has been an Error 403: Access Denied." />
 
 <cms:embed 'header2.html' />
             
 <div class="content">
-    <h1>Error 403: Access Denied</h1>
+    <h1><cms:show page_title /></h1>
     <cms:editable name='main_content' type='richtext' label='Main Content'>
         <p>We're sorry, it looks like you tried to go somewhere that you're not allowed to access. Please use the menu to navigate to a different page. If you believe this shouldn't have happened, please contact us, and we'll do our best to fix it ASAP.</p>
     </cms:editable>

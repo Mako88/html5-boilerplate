@@ -1,14 +1,14 @@
 <?php require_once( 'couch/cms.php' ); ?>
 <cms:template title='Blog' clonable='1' commentable='1' dynamic_folders='1'>
+    <cms:editable name='page_title' type='text' label='Page Title'>Our Blog</cms:editable>
     <cms:editable name='blog_content' type='richtext' label='Blog Content' />
-    
     <cms:editable name='blog_image' label='Image' type='image' />
 </cms:template>
 <cms:embed 'header1.html' />
 
     <title>
         <cms:if k_is_list >
-            <cms:show k_template_title /> 
+            <cms:show page_title /> 
         <cms:else />
             <cms:show k_page_title />
         </cms:if>
@@ -19,7 +19,7 @@
 <cms:embed 'header2.html' />
             
 <div class="content">
-    <h1><cms:show k_template_title /></h1>
+    <h1><cms:show page_title /></h1>
     <cms:if k_is_list >
         <cms:pages paginate='1' limit='5'>
             <div id="<cms:show k_page_name />">

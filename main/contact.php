@@ -2,13 +2,13 @@
 <cms:template title='Contact Us' />
 <cms:embed 'header1.html' />
 
-    <title><cms:show k_template_title /> | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
+    <title><cms:editable name='page_title' type='text' label='Page Title'>Contact Us</cms:editable> | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
     <meta name="description" content="Contact Us" />
 		
 <cms:embed 'header2.html' />
 			
 <div class="content">
-    <h1><cms:show k_template_title /></h1>
+    <h1><cms:show page_title /></h1>
     <cms:editable name='address' label='Your Address' type='richtext'>
         <p>Address</p>
     </cms:editable>
