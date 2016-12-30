@@ -20,6 +20,16 @@ That Guy Boilerplate is a modified version of [HTML5 Boilerplate](http://html5bo
 4. That Guy Boilerplate uses caching by default and includes a cache buster. All linked images or scripts should be linked using the `<cms:cache_buster />` tag. This tag accepts one parameter: a link relative to the root of the site. I.E. `<cms:cache_buster 'path/to/file.css' />`. This tag should be used for any images linked inside CSS files (You can also use any couch tag from within .css files, not just `<cms:cache_buster />`).
 5. If you need to add another .css file for any reason, you must include it in the `css/generate_css.php` file in the same way the others are. The CSS is generated in the order that the files are included inside that file. Any time a .css file changes, they are all automatically concatenated, minified, and outputted to `css/generated.css` the first time any page is visited.
 
+
+## Other Projects
+
+That Guy Boilerplate makes use of the following projects:
+* [h5bp](https://github.com/h5bp/html5-boilerplate)
+* [CouchCMS](https://github.com/CouchCMS/CouchCMS)
+* [minify](https://github.com/matthiasmullie/minify)
+* [normalize.css](https://github.com/necolas/normalize.css/)
+* [jquery](https://github.com/jquery/jquery)
+
 ## Contributing
 
 Let me know if you have any suggestions, comments, or bug reports!
