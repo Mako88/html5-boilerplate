@@ -12,9 +12,9 @@
 }
 
 .form ul li label {
-  width: 75px;
+  width: 115px;
   margin-bottom: 5px;
-  text-align: right;
+  text-align: left;
   margin-right: 25px;
   display: inline-block;
   vertical-align: top;

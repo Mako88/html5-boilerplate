@@ -37,7 +37,7 @@
                 </div>
                 <hr />
                 <cms:if "<cms:not_empty blog_image />">
-                    <img src="<cms:show blog_image />" id="blogimage" />
+                    <img src="<cms:show blog_image />" class="blogimages" />
                 </cms:if>
                 <p class="text"><cms:excerpt count='55'><cms:show blog_content /></cms:excerpt></p>
             </div>
@@ -58,7 +58,7 @@
         </div>
         <hr />
         <cms:if "<cms:not_empty blog_image />">
-            <img src="<cms:show blog_image />" class="blogimage" />
+            <img src="<cms:show blog_image />" id="blogimage" />
         </cms:if>
         <div class="text">
             <cms:show blog_content />

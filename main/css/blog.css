@@ -1,3 +1,17 @@
+.blogimages {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+#blogimage {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
 .title {
     display: block;
     margin: 150px auto 0 auto;
@@ -47,13 +61,15 @@
 }
 
 #commentlist li img {
-    float: left;
+    display: inline-block;
     margin-right: 10px;
+    vertical-align: middle;
 }
 
 #commentlist li p {
-    float: left;
+    display: inline-block;
     margin: 0;
+    vertical-align: middle;
 }
 
 #commentlist .comment_text {
