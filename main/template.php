@@ -1,8 +1,10 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='Under Construction' />
+<cms:template title='Under Construction' hidden='1'>
+    <cms:editable name='page_title' type='text' label='Page Title' order='1'>Under Construction</cms:editable>
+</cms:template>
 <cms:embed 'header1.html' />
 
-    <title><cms:editable name='page_title' type='text' label='Page Title'>Under Construction</cms:editable> | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
+    <title><cms:show page_title /> | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
     <meta name="description" content="Under Construction" />
 
 <cms:embed 'header2.html' />

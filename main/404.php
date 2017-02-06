@@ -1,8 +1,10 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='404 Page' hidden='1' />
+<cms:template title='404 Page' hidden='1'>
+    <cms:editable name='page_title' type='text' label='Page Title' order='1'>Error 404: File Not Found</cms:editable>
+</cms:template>
 <cms:embed 'header1.html' />
 
-    <title><cms:editable name='page_title' type='text' label='Page Title'>Error 404: File Not Found</cms:editable> | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
+    <title><cms:show page_title /> | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
     <meta name="description" content="There has been an Error 404: File Not Found." />
 
 <cms:embed 'header2.html' />

@@ -1,8 +1,10 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='Contact Us' />
+<cms:template title='Contact Us'>
+    <cms:editable name='page_title' type='text' label='Page Title' order='1'>Contact Us</cms:editable>
+</cms:template>
 <cms:embed 'header1.html' />
 
-    <title><cms:editable name='page_title' type='text' label='Page Title'>Contact Us</cms:editable> | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
+    <title><cms:show page_title /> | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
     <meta name="description" content="Contact Us" />
 		
 <cms:embed 'header2.html' />
