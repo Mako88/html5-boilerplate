@@ -1,38 +1,33 @@
 /* Change max-width to different steps based on content ----------- */
+
 @media only screen and (max-width: 768px) {
-  .mobileshow {
-    display: initial;
-  }
-    
-  .mobilehidden {
-    display: none;
-  }
-    
-  nav ul {
-    display: none;
-  }
-
-  #menubox:checked ~ nav ul {
-    display: block;
-    text-align: left;
-  }
-
-  #menubox:checked ~ nav ul li {
-    display: block;
-    float: none;
-    width: 110px;
-  }
-
-  #menubox:checked ~ nav ul li ul {
-    display: block;
-    left: 110px;
-    top: 0;
-  }
-
-  #menuicon {
-    display: block;
-    z-index: 25;
-    margin-top: 10px;
-    margin-left: 10px;
-  }
+    .mobileshow {
+        display: initial;
+    }
+    .mobilehidden {
+        display: none;
+    }
+    nav ul {
+        display: none;
+    }
+    #menubox:checked~nav ul {
+        display: block;
+        text-align: left;
+    }
+    #menubox:checked~nav ul li {
+        display: block;
+        float: none;
+        width: 110px;
+    }
+    #menubox:checked~nav ul li ul {
+        display: block;
+        left: 110px;
+        top: 0;
+    }
+    #menuicon {
+        display: block;
+        z-index: 25;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
 }
