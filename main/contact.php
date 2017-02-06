@@ -4,49 +4,40 @@
 </cms:template>
 <cms:embed 'header1.html' />
 
-<title>
-    <cms:show page_title /> |
-    <cms:get_custom_field 'site_name' masterpage='globals.php' />
-</title>
-<meta name="description" content="Contact Us" />
-
+    <title><cms:show page_title /> | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
+    <meta name="description" content="Contact Us" />
+		
 <cms:embed 'header2.html' />
-
+			
 <div class="content">
-    <h1>
-        <cms:show page_title />
-    </h1>
+    <h1><cms:show page_title /></h1>
     <cms:editable name='address' label='Your Address' type='richtext'>
         <p>Address</p>
     </cms:editable>
 
-    <cms:if "<cms:get_flash 'success_msg' />">
-        <p class="success">
-            <cms:get_flash 'success_msg' />
-        </p>
+    <cms:if "<cms:get_flash 'success_msg' />" >
+        <p class="success"><cms:get_flash 'success_msg' /></p>
     </cms:if>
 
     <cms:form action='' method='post' id='contact-form' class='form'>
         <cms:if k_success>
-            <cms:if frm_name2 || frm_name3 !='Please do not edit this text.'>
+            <cms:if frm_name2 || frm_name3 != 'Please do not edit this text.'>
                 <p class="error">You edited a field meant to trap spambots. If you're a human please try again and leave those fields untouched.</p>
-                <cms:else />
-                <cms:if "<cms:too_many_urls in='frm_message' allowed='1' />">
+            <cms:else />
+                <cms:if "<cms:too_many_urls in='frm_message' allowed='1' />" >
                     <p class="error">Sorry. There are too many URLs in your message.</p>
-                    <cms:else/>
-                    <cms:send_mail html='1' reply_to=frm_email from=k_email_from to=k_email_to subject="<cms:get_custom_field 'site_name' masterpage='globals.php' /> Contact Form">
+                <cms:else/>
+                    <cms:send_mail html='1' reply_to=frm_email from=k_email_from to=k_email_to subject="<cms:get_custom_field 'site_name' masterpage='globals.php' /> Contact Form"> 
                         <p style="text-align: left;">
-                            <b>Name:</b>
-                            <cms:show frm_name /><br />
-                            <b>Email:</b>
-                            <cms:show frm_email /><br /><br />
+                            <b>Name:</b> <cms:show frm_name /><br />
+                            <b>Email:</b> <cms:show frm_email /><br /><br />
                             <b>Message:</b><br />
                             <cms:show frm_message />
                         </p>
                     </cms:send_mail>
 
                     <cms:set_flash name='success_msg' value="Thank you for contacting us. We will reply to you as soon as possible." />
-                    <cms:redirect k_page_link />
+                    <cms:redirect k_page_link /> 
                 </cms:if>
             </cms:if>
         </cms:if>
