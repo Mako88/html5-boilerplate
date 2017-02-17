@@ -22,8 +22,8 @@
         <img src="<cms:cache_buster 'img/icons/menu.png' />" id="menuicon" />
     </label>
     <ul>
-        <li class="<cms:if k_template_name=='index.php'>current</cms:if>" ><a href="<cms:link 'index.php' />">Home</a></li>
-        <li class="<cms:if k_template_name=='blog.php'>current</cms:if>" ><a href="<cms:link 'blog.php' />">Blog</a></li>
-        <li class="<cms:if k_template_name=='contact.php'>current</cms:if>" ><a href="<cms:link 'contact.php' />">Contact</a></li>
+        <li class="<cms:if k_template_name=='index.php'>current</cms:if>" ><a href="<cms:link 'index.php' />"><cms:get_custom_field 'home' masterpage='menu.php' /></a></li>
+        <li class="<cms:if k_template_name=='blog.php'>current</cms:if>" ><a href="<cms:link 'blog.php' />"><cms:get_custom_field 'blog' masterpage='menu.php' /></a></li>
+        <li class="<cms:if k_template_name=='contact.php'>current</cms:if>" ><a href="<cms:link 'contact.php' />"><cms:get_custom_field 'contact' masterpage='menu.php' /></a></li>
     </ul>
 </nav>
