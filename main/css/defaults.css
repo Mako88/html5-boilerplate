@@ -1,4 +1,4 @@
-/* Defaults from H5BP 5.3.0 (with additions) */
+/* Defaults from H5BP 6.1.0 (with additions) */
 
 html {
     color: #222;
@@ -76,6 +76,7 @@ textarea {
     padding: 0;
     position: absolute;
     width: 1px;
+    white-space: nowrap;
 }
 
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
@@ -85,6 +86,7 @@ textarea {
     overflow: visible;
     position: static;
     width: auto;
+    white-space: inherit;
 }
 
 .invisible {
@@ -101,11 +103,12 @@ textarea {
 }
 
 @media print {
-    *, *:before, *:after, *:first-letter, p:first-line, div:first-line, blockquote:first-line, li:first-line {
+    *, *:before, *:after {
         background: transparent !important;
         color: #000 !important;
         box-shadow: none !important;
         text-shadow: none !important;
+        -webkit-box-shadow: none !important;
     }
     a, a:visited {
         text-decoration: underline;
