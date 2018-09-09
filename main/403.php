@@ -4,7 +4,7 @@
 </cms:template>
 <cms:embed 'header1.html' />
 
-    <title><cms:show page_title /> | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
+    <title><cms:show page_title /> | <cms:get_field 'site_name' masterpage='globals.php' /></title>
     <meta name="description" content="There has been an Error 403: Access Denied." />
 
 <cms:embed 'header2.html' />

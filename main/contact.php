@@ -4,7 +4,7 @@
 </cms:template>
 <cms:embed 'header1.html' />
 
-    <title><cms:show page_title /> | <cms:get_custom_field 'site_name' masterpage='globals.php' /></title>
+    <title><cms:show page_title /> | <cms:get_field 'site_name' masterpage='globals.php' /></title>
     <meta name="description" content="Contact Us" />
 		
 <cms:embed 'header2.html' />
@@ -27,7 +27,7 @@
                 <cms:if "<cms:too_many_urls in='frm_message' allowed='1' />" >
                     <p class="error">Sorry. There are too many URLs in your message.</p>
                 <cms:else/>
-                    <cms:send_mail html='1' reply_to=frm_email from=k_email_from to=k_email_to subject="<cms:get_custom_field 'site_name' masterpage='globals.php' /> Contact Form"> 
+                    <cms:send_mail html='1' reply_to=frm_email from=k_email_from to=k_email_to subject="<cms:get_field 'site_name' masterpage='globals.php' /> Contact Form"> 
                         <p style="text-align: left;">
                             <b>Name:</b> <cms:show frm_name /><br />
                             <b>Email:</b> <cms:show frm_email /><br /><br />

@@ -15,7 +15,7 @@
                     <cms:else/>
                         <cms:process_comment auto_redirect='0' />
                         <cms:if k_process_comment_success >
-                            <cms:send_mail html='1' from=k_email_from to=k_email_to subject="Comment Posted on <cms:get_custom_field 'site_name' masterpage='globals.php' />"> 
+                            <cms:send_mail html='1' from=k_email_from to=k_email_to subject="Comment Posted on <cms:get_field 'site_name' masterpage='globals.php' />"> 
                                 <p style="text-align: left;">
                                     <b>Name:</b> <cms:show frm_name /><br />
                                     <b>Email:</b> <cms:show frm_email /><br /><br />

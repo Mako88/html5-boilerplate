@@ -12,7 +12,7 @@
         <cms:else />
             <cms:show k_page_title />
         </cms:if>
-        | <cms:get_custom_field 'site_name' masterpage='globals.php' />
+        | <cms:get_field 'site_name' masterpage='globals.php' />
     </title>
     <meta name="description" content="Our Blog" />
 
