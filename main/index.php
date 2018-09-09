@@ -1,5 +1,7 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='Home' />
+<cms:template title='Home'>
+    <cms:editable type='text' name='menu_label' label='Menu Label' />
+</cms:template>
 <cms:embed 'header1.html' />
 
     <title><cms:get_field 'site_name' masterpage='globals.php' /> - <cms:get_field 'site_desc' masterpage='globals.php' /></title>

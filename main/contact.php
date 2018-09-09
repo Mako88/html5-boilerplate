@@ -1,6 +1,7 @@
 <?php require_once( 'couch/cms.php' ); ?>
 <cms:template title='Contact Us'>
     <cms:editable name='page_title' type='text' label='Page Title' order='0'>Contact Us</cms:editable>
+    <cms:editable name='menu_label' type='text' label='Menu Label' order='1'>Contact Us</cms:editable>
 </cms:template>
 <cms:embed 'header1.html' />
 

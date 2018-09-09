@@ -1,8 +1,9 @@
 <?php require_once( 'couch/cms.php' ); ?>
 <cms:template title='Blog' clonable='1' commentable='1' dynamic_folders='1'>
     <cms:editable name='page_title' type='text' label='Page Title' order='0'>Our Blog</cms:editable>
-    <cms:editable name='blog_content' type='richtext' label='Blog Content' order='1' />
-    <cms:editable name='blog_image' label='Image' type='image' order='2' />
+    <cms:editable name='menu_label' type='text' label='Menu Label' order='1'>Our Blog</cms:editable>
+    <cms:editable name='blog_content' type='richtext' label='Blog Content' order='2' />
+    <cms:editable name='blog_image' label='Image' type='image' order='3' />
 </cms:template>
 <cms:embed 'header1.html' />
 
