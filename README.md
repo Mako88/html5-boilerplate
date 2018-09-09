@@ -12,13 +12,14 @@ That Guy Boilerplate is a modified version of [HTML5 Boilerplate](http://html5bo
 
 ## Notes
 
-1. After you have installed Couch (and while logged in as Super-Admin), visit each .php file in your browser (`404.php`, `403.php`, `globals.php`, `index.php`, `contact.php`, and `css/generate_css.php`). The CSS won't work until you edit a .css file.
-2. That Guy Boilerplate comes with a .htaccess file. Couch has an option to enable pretty URLs, which works through a generated .htaccess. If you would like to enable pretty urls, you will need to copy some of the settings from the Couch generated .htaccess to the one included with That Guy Boilerplate. You will need to:
-  1. Add the line `<IfModule mod_rewrite.c>` to the bottom of the That Guy Boilerplate .htaccess file.
-  2. Copy everything beneath the `#DO NOT EDIT BELOW THIS` line in the Couch generated .htaccess to the bottom of the That Guy Boilerplate .htaccess (beneath the `<IfModule mod_rewrite.c>` line you added above).
-3. I have included tim's "Too Many URLs" addon (Credit [here](http://www.couchcms.com/forum/viewtopic.php?p=21365#p21365)) It checks the number of URL's in the contact form message and only allows the number that you set (default is 1).
-4. That Guy Boilerplate uses caching by default and includes a cache buster. All linked images or scripts should be linked using the `<cms:cache_buster />` tag. This tag accepts one parameter: a link relative to the root of the site. I.E. `<cms:cache_buster 'path/to/file.css' />`. This tag should be used for any images linked inside CSS files (You can also use any couch tag from within .css files, not just `<cms:cache_buster />`).
-5. If you need to add another .css file for any reason, you must include it in the `css/generate_css.php` file in the same way the others are. The CSS is generated in the order that the files are included inside that file. Any time a .css file changes, they are all automatically concatenated, minified, and outputted to `css/generated.css` the first time any page is visited.
+* After you have installed Couch (and while logged in as Super-Admin), visit each .php file in your browser (`404.php`, `403.php`, `globals.php`, `index.php`, `contact.php`, `blog.php`, `menu.php`, and `css/generate_css.php`).
+* The CSS won't work until you edit a .css file.
+* That Guy Boilerplate comes with a .htaccess file. Couch has an option to enable pretty URLs, which works through a generated .htaccess. If you would like to enable pretty urls, you will need to copy some of the settings from the Couch generated .htaccess to the one included with That Guy Boilerplate. You will need to:
+  * Add the line `<IfModule mod_rewrite.c>` to the bottom of the That Guy Boilerplate .htaccess file.
+  * Copy everything beneath the `#DO NOT EDIT BELOW THIS` line in the Couch generated .htaccess to the bottom of the That Guy Boilerplate .htaccess (beneath the `<IfModule mod_rewrite.c>` line you added above).
+* I have included tim's "Too Many URLs" addon (Credit [here](http://www.couchcms.com/forum/viewtopic.php?p=21365#p21365)) It checks the number of URL's in the contact form message and only allows the number that you set (default is 1).
+* That Guy Boilerplate uses caching by default and includes a cache buster. All linked images or scripts should be linked using the `<cms:cache_buster />` tag. This tag accepts one parameter: a link relative to the root of the site. I.E. `<cms:cache_buster 'path/to/file.css' />`. This tag should be used for any images linked inside CSS files (You can also use any couch tag from within .css files, not just `<cms:cache_buster />`).
+* If you need to add another .css file for any reason, you must include it in the `css/generate_css.php` file in the same way the others are. The CSS is generated in the order that the files are included inside that file. Any time a .css file changes, they are all automatically concatenated, minified, and outputted to `css/generated.css` the first time any page is visited.
 
 
 ## Other Projects
