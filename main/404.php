@@ -1,6 +1,6 @@
 <?php require_once( 'couch/cms.php' ); ?>
 <cms:template title='404 Page' hidden='1'>
-    <cms:editable name='page_title' type='text' label='Page Title' order='1'>Error 404: File Not Found</cms:editable>
+    <cms:editable name='page_title' type='text' label='Page Title' order='0'>Error 404: File Not Found</cms:editable>
 </cms:template>
 <cms:embed 'header1.html' />
 

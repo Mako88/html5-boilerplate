@@ -1,6 +1,6 @@
 <?php require_once( 'couch/cms.php' ); ?>
 <cms:template title='403 Page' hidden='1'>
-    <cms:editable name='page_title' type='text' label='Page Title' order='1'>Error 403: Access Denied</cms:editable>
+    <cms:editable name='page_title' type='text' label='Page Title' order='0'>Error 403: Access Denied</cms:editable>
 </cms:template>
 <cms:embed 'header1.html' />
 
